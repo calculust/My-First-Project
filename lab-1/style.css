@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body { font-family: 'Roboto Mono', monospace; background-color:#d3d3d3; }
+h2, p, .readme-wrapper { text-align: center; }
+a { text-decoration: none; color:#ff0000; }
+a:hover { cursor:pointer; font-weight: bold; color:#8b0000; }
+span { color:#6b8e23; font-weight: bold; }
+
+.boxes { margin:15px; padding:35px; border:5px solid #a9a9a9; border-radius: 15px; width:30em; display:block; position:relative; }
+#box1 { background-color:lightgreen; }
+#box2 { background-color:lightpink; }
+#box3 { background-color:lightblue; }
+#box4 { background-color:lightyellow; }
+
+.image { width:50px; height:50px; border-radius: 50px; background-color: yellow; position:absolute; left:65px; top:44px; }
+
+h1 { color:darkorange;}
+h1.original { color:purple;}
+h1.additional { color:greenyellow;}
+h1#show1 { color:red; }
+h1#show2 { color:orange; }
+h1#show3 { color:yellow; }
+h1#show4 { color:green; }
+h1#show5 { color:blue; }
+
+ul { color:indigo; }
+ul.star { color:darkgreen; }
+ul#wars { color:red; }
+div.list { border:2px solid #000;}
