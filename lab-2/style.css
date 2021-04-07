@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body { font-family: 'Roboto Mono', monospace; background-color:#d3d3d3; }
+
+#board { padding-top:3em; text-align:center; }
+.row { clear:both; margin: 0 auto; width:302px; }
+.row > div { background-color: darkgreen ; height:100px; width:100px; float:left; cursor:pointer; }
+
+.top { border-bottom:1px solid #000;}
+.bottom { border-top:1px solid #000;}
+.left { border-right:1px solid #000;}
+.right { border-left:1px solid #000;}
