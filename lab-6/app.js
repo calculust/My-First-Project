@@ -2,8 +2,6 @@ let cells = document.querySelectorAll('.row > div');
 let moveIndex = 0;
 let isActive = true;
 
-cells[0].textContent;
-
 for (i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', cellClicked);
 }
