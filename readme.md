@@ -7,3 +7,5 @@ Contents:
 * 4 - JS / Lab: 99 Lines of Code - Part 1
 * 5 - JS / Lab: JavaScript Console Resume
 * 6 - JS / Lab: Tic Tac Toe
+* 7 - Lab: Bootstrap Drills
+* 8 - Lab: Bootstrap Responsive Resume 
