@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;	
+}
+
+body {
+  padding-top:30px;
+}
+
+#prompt-container {
+  font-family: Courier New, Courier, monospace;
+  font-size: 24px;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+#yellow-block {
+  position: absolute;
+  /* margin-top: 10px; */
+  width: 13px;
+  height: 32px;
+  background-color: yellow;
+  padding:0;
+  left:30px;
+}
+
+.keyboard-container {
+  margin-top: 200px;
+}
+
+#target-letter {
+  font-size: 38px;  
+}
+
+.keys-row {
+  margin-top: 40px;
+  padding: 10px 0;
+}
+
+#feedback {
+  font-size: 20px;
+}
+.glyphicon-ok {
+  color: #1DA237
+}
+
+.glyphicon-remove {
+  color : #CD2626
+}
+
+.highlight {
+  background-color:yellow;
+}
