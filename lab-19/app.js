@@ -43,5 +43,5 @@ class Die {
 }
 
 function removeDie(id) { // Remove die from global array
-    dice = dice.filter((die) => die.id != id);
+    dice = dice.filter(die => die.id != id);
 }
