@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shape Up Or Shape Out</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-light p-5">
+        <div id="container">
+            <nav class="row mb-5">
+                <div class="col" id="controlpanel">
+                    <h1 class="text-center mb-5">Add A Shape!</h1>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        
+                        <!-- Tab: Rectangle -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="rectangle-tab" data-bs-toggle="tab" data-bs-target="#rectangle" type="button" role="tab" aria-controls="rectangle" aria-selected="true">&#9645; Rectangle</button>
+                        </li>
+
+                        <!-- Tab: Square -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="square-tab" data-bs-toggle="tab" data-bs-target="#square" type="button" role="tab" aria-controls="square" aria-selected="false">&#9633; Square</button>
+                        </li>
+
+                        <!-- Tab: Circle -->
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="circle-tab" data-bs-toggle="tab" data-bs-target="#circle" type="button" role="tab" aria-controls="circle" aria-selected="false">&#9675; Circle</button>
+                        </li>
+
+                        <!-- Tab: Triable -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="triangle-tab" data-bs-toggle="tab" data-bs-target="#triangle" type="button" role="tab" aria-controls="triangle" aria-selected="false">&#9651; Triangle</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content bg-white shadow rounded-bottom p-3" id="myTabContent">
+                        
+                        <!-- Rectangle -->
+                        <div class="tab-pane fade show active" id="rectangle" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="input-group">
+                                <button id="addRectangle" class="btn btn-primary me-1">Add Rectangle</button>
+                                <span class="input-group-text">width</span>
+                                <input id="rectangleWidth" type="text" class="form-control" value="100" aria-label="width px">
+                                <span class="input-group-text me-1">px</span>
+                                <span class="input-group-text">height</span>
+                                <input id="rectangleHeight" type="text" class="form-control" value="50" aria-label="height px">
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Square -->
+                        <div class="tab-pane fade" id="square" role="tabpanel" aria-labelledby="square-tab">
+                            <div class="input-group">
+                                <button id="addSquare" class="btn btn-primary me-1">Add Square</button>
+                                <span class="input-group-text">side length</span>
+                                <input id="squareSideLength" type="text" class="form-control" value ="100" aria-label="side length px">
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Circle -->
+                        <div class="tab-pane fade" id="circle" role="tabpanel" aria-labelledby="circle-tab">
+                            <div class="input-group">
+                                <button id="addCircle" class="btn btn-primary me-1">Add Circle</button>
+                                <span class="input-group-text">radius</span>
+                                <input id="circleRadius" type="text" class="form-control" value="100" aria-label="radius px">
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Triangle -->
+                        <div class="tab-pane fade" id="triangle" role="tabpanel" aria-labelledby="triangle-tab">
+                            <div class="input-group">
+                                <button id="addTriangle" class="btn btn-primary me-1">Add Triangle</button>
+                                <span class="input-group-text">height</span>
+                                <input id="triangleHeight" type="text" class="form-control" value="100" aria-label="height px">
+                                <span class="input-group-text">px</span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </nav>
+            <main class="row">
+
+                <!-- Main Panel -->
+                <div class="col-8" id="mainpanel">
+                    <div id="drawingboard" class="shadow rounded"></div>
+                </div>
+
+                <!-- Side Panel -->
+                <div class="col-4" id="sidepanel">
+                    <div id="sidepanelDisplay" class="shadow rounded p-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Shape</span>
+                            <input id="describeShape" type="text" class="form-control" aria-label="shape">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Width</span>
+                            <input id="describeWidth" type="text" class="form-control" aria-label="shape">
+                            <span class="input-group-text">px</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Height</span>
+                            <input id="describeHeight" type="text" class="form-control" aria-label="shape">
+                            <span class="input-group-text">px</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Area</span>
+                            <input id="describeArea" type="text" class="form-control" aria-label="shape">
+                            <span class="input-group-text">px</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Perimeter</span>
+                            <input id="describePerimeter" type="text" class="form-control" aria-label="shape">
+                            <span class="input-group-text">px</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">Radius</span>
+                            <input id="describeRadius" type="text" class="form-control" aria-label="shape">
+                            <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

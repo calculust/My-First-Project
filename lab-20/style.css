@@ -1,0 +1,12 @@
+#controlpanel button { width:140px !important;}
+
+#myTabContent { border:1px solid #dee2e6; border-top:0;}
+
+#drawingboard { width:600px; height:600px; margin:0 auto; position:relative; background-color: lightskyblue; overflow:hidden; }
+
+#sidepanelDisplay { background-color:lightskyblue;}
+
+.rectangle { background-color:rgba(0, 128, 0, 0.69); position:absolute; }
+.square { background-color:rgba(255, 0, 0, 0.69); position:absolute; }
+.circle { background-color:rgba(128, 0, 128, 0.69); border-radius:50%; position:absolute; }
+.triangle { position:absolute; height:0; width:0;  }
